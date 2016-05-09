@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\DavToWav.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7FDB8FA9-5A4E-4FC8-9B6B-3EBCEEFB821C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -71,25 +74,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>bin/</OutDir>
-    <IntDir>intermediate/</IntDir>
+    <OutDir>..\..\Binaries\Windows\</OutDir>
+    <IntDir>intermediate\</IntDir>
     <TargetName>$(ProjectName)D</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>bin/</OutDir>
-    <IntDir>intermediate/</IntDir>
+    <OutDir>..\..\Binaries\Windows\</OutDir>
+    <IntDir>intermediate\</IntDir>
     <TargetName>$(ProjectName)D</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>bin/</OutDir>
-    <IntDir>intermediate/</IntDir>
+    <OutDir>..\..\Binaries\Windows\</OutDir>
+    <IntDir>intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>bin/</OutDir>
-    <IntDir>intermediate/</IntDir>
+    <OutDir>..\..\Binaries\Windows\</OutDir>
+    <IntDir>intermediate\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -151,9 +154,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="DavToWav.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
